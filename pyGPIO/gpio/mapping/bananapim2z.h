@@ -83,35 +83,35 @@ replace XZ with the pin which is wired out on this position (e.g. PA10, PG11 etc
 	{"GPIO",
 		{
 			// left side
-      {   "GPIO3",  SUNXI_GPIO(12),   3   },  // TWI0-SDA
-      {   "GPIO5",  SUNXI_GPIO(11),   5   },  // TWI0-SCK
-      {   "GPIO7",  SUNXI_GPIO(6),    7   },  // PWM1
-      {   "GPIO11",  SUNXI_GPIO(1),   11  }, // UART2-RX
-      {   "GPIO13",  SUNXI_GPIO(0),   13  }, // UART2-TX
-      {   "GPIO15",  SUNXI_GPIO(3),   15  }, // UART2-CTS
-      {   "GPIO19",  SUNXI_GPIO(0),   19  }, // SPI0-MOSI
-      {   "GPIO21",  SUNXI_GPIO(1),   21  }, // SPI0-MISO
-      {   "GPIO23",  SUNXI_GPIO(2),   23  }, // SPI0-CLK
-      {   "GPIO27",  SUNXI_GPIO(19),  27  }, // TWI1-SDA
-      {   "GPIO29",  SUNXI_GPIO(7),   29  }, // PA7-EINT7
-      {   "GPIO31",  SUNXI_GPIO(8),   31  }, // PA8-EINT8
-      {   "GPIO33",  SUNXI_GPIO(9),   33  }, // PA9-EINT9
-      {   "GPIO35",  SUNXI_GPIO(10),  35  }, // PA10-EINT10
-      {   "GPIO37",  SUNXI_GPIO(17),  37  }, // PA17-EINT17
+      {   "GPIO3",  SUNXI_GPA(12),   3   }, // TWI0-SDA PA12-ENT12
+      {   "GPIO5",  SUNXI_GPA(11),   5   }, // TWI0-SCK PA11-ENT11
+      {   "GPIO7",  SUNXI_GPA(6),    7   }, // PWM1 PA6-ENT6
+      {   "GPIO11",  SUNXI_GPA(1),   11  }, // UART2-RX PA1-ENT1
+      {   "GPIO13",  SUNXI_GPA(0),   13  }, // UART2-TX PA0-ENT0
+      {   "GPIO15",  SUNXI_GPA(3),   15  }, // UART2-CTS PA3-ENT3
+      {   "GPIO19",  SUNXI_GPC(0),   19  }, // SPI0-MOSI PC0
+      {   "GPIO21",  SUNXI_GPC(1),   21  }, // SPI0-MISO PC1
+      {   "GPIO23",  SUNXI_GPC(2),   23  }, // SPI0-CLK PC2
+      {   "GPIO27",  SUNXI_GPA(19),  27  }, // TWI1-SDA PA19-ENT19
+      {   "GPIO29",  SUNXI_GPA(7),   29  }, // PA7-EINT7 
+      {   "GPIO31",  SUNXI_GPA(8),   31  }, // PA8-EINT8 
+      {   "GPIO33",  SUNXI_GPA(9),   33  }, // PA9-EINT9
+      {   "GPIO35",  SUNXI_GPA(10),  35  }, // PA10-EINT10
+      {   "GPIO37",  SUNXI_GPA(17),  37  }, // PA17-EINT17 SPDIF-OUT
       // right side
-      {   "GPIO8",  SUNXI_GPIO(13),   8   },  // UART3-TX
-      {   "GPIO10",  SUNXI_GPIO(14),  10  }, // UART3-RX
-      {   "GPIO12",  SUNXI_GPIO(16),  12  }, // UART3-CTS    
-      {   "GPIO16",  SUNXI_GPIO(15),  16  }, // UART3-RTS
-      {   "GPIO18",  SUNXI_GPIO(4),   18  }, // PC4  
-      {   "GPIO22",  SUNXI_GPIO(2),   22  }, // UART2_RTS
-      {   "GPIO24",  SUNXI_GPIO(3),   24  }, // SPI0-CS
-      {   "GPIO26",  SUNXI_GPIO(7),   26  }, // PC7
-      {   "GPIO28",  SUNXI_GPIO(18),  28  }, // TWI1-SCK      
-      {   "GPIO32",  SUNXI_GPIO(2),   32  }, // PL2-S-EINT2
-      {   "GPIO26",  SUNXI_GPIO(4),   36  }, // PL4-ENT4
-      {   "GPIO38",  SUNXI_GPIO(21),  38  }, // PA21-EINT21
-      {   "GPIO40",  SUNXI_GPIO(20),  40  }, // PA20-EINT20
+      {   "GPIO8",  SUNXI_GPA(13),   8   }, // UART3-TX PA13
+      {   "GPIO10",  SUNXI_GPA(14),  10  }, // UART3-RX PA14
+      {   "GPIO12",  SUNXI_GPA(16),  12  }, // UART3-CTS PA16
+      {   "GPIO16",  SUNXI_GPA(15),  16  }, // UART3-RTS PA15
+      {   "GPIO18",  SUNXI_GPC(4),   18  }, // PC4  
+      {   "GPIO22",  SUNXI_GPA(2),   22  }, // UART2_RTS PA2
+      {   "GPIO24",  SUNXI_GPC(3),   24  }, // SPI0-CS PC3
+      {   "GPIO26",  SUNXI_GPC(7),   26  }, // PC7 
+      {   "GPIO28",  SUNXI_GPA(18),  28  }, // TWI1-SCK PA18      
+      {   "GPIO32",  SUNXI_GPL(2),   32  }, // PL2-S-EINT2
+      {   "GPIO26",  SUNXI_GPL(4),   36  }, // PL4-ENT4
+      {   "GPIO38",  SUNXI_GPA(21),  38  }, // PA21-EINT21
+      {   "GPIO40",  SUNXI_GPA(20),  40  }, // PA20-EINT20
       {
           {   0,  0,  0}
       },

@@ -278,18 +278,18 @@ def check_board():
 				shutil.copy2('pyGPIO/gpio/mapping/pcduino3.h', 'pyGPIO/gpio/mapping.h')		
 			
 			#Sinovoip Boards
-			if "bananapim2" == board:
+			elif "bananapim2" == board:
 				print ("Detected board: " + print_green("Bananapi M2"))
 				print_correct()
 				shutil.copy2('pyGPIO/gpio/mapping/bananapim2.h', 'pyGPIO/gpio/mapping.h')
 
-			if "bananapim2zero" == board:
+			elif "bananapim2zero" == board:
 				print ("Detected board: " + print_green("Bananapi M2 Zero"))
 				print_correct()
 				shutil.copy2('pyGPIO/gpio/mapping/bananapim2z.h', 'pyGPIO/gpio/mapping.h')
 
 			#Libre Computer Boards
-			if board in ("tritium-h3", "tritium-h5"):
+			elif board in ("tritium-h3", "tritium-h5"):
 				print ("Detected board: " + print_green("Tritium"))
 				print_correct()
 				shutil.copy2('pyGPIO/gpio/mapping/tritium.h', 'pyGPIO/gpio/mapping.h')			
