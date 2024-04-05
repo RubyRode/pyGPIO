@@ -210,7 +210,7 @@ def check_board():
 	"""
 	boardinfo = open("/etc/armbian-release", 'r')
 	for line in boardinfo:
-		if "BOARD" in line:
+		if "BOARD=" in line:
 			board = line.split("=")[1].rstrip()
 			#OrangePi Boards
 			if "orangepizero" == board:
